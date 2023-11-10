@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventure Projects - Travelicious</title>
+<style>
+  /* Reset some default styles */
+  body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+
+  /* Adventure activity styles */
+  .activity-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  .activity-card {
+    flex: 0 0 calc(33.33% - 1em);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .activity-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .activity-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .activity-card:hover .activity-info {
+    opacity: 1;
+  }
+  .activity-title {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .activity-description {
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 768px) {
+    .activity-card {
+      flex: 0 0 100%;
+    }
+  }
+   /* Footer styles */
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  @media (max-width: 768px) {
+    .activity-card {
+      flex: 0 0 100%;
+    }
+  }
+  
+</style>
+</head>
+<body>
+  <header>
+    <h1>Travelicious</h1>
+    <p>Embark on Exciting Adventures</p>
+  </header>
+  <div class="container">
+    <div class="activity-section">
+      <div class="activity-card">
+        <div class="activity-images">
+          <img src="/water1.jpg" alt="Water Sports 1"><br>
+          <img src="/water2.jpg" alt="Water Sports 2"><br>
+          <img src="/water3.jpg" alt="Water Sports 3"><br>
+        </div>
+        <div class="activity-info">
+          <h3 class="activity-title">Water Sports</h3>
+          <p class="activity-description">Experience the thrill of water adventures with activities such as surfing, snorkeling, and kayaking.</p>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="activity-images">
+          <img src="/winter1.jpg" alt="Winter Sports 1"><br>
+          <img src="/winter2.jpg" alt="Winter Sports 2"><br>
+          <img src="/winter3.jpg" alt="Winter Sports 3"><br>
+        </div>
+        <div class="activity-info">
+          <h3 class="activity-title">Winter Sports</h3>
+          <p class="activity-description">Embrace the snow-covered landscapes and enjoy skiing, snowboarding, and ice skating in stunning destinations.</p>
+        </div>
+      </div>
+      <div class="activity-card">
+        <div class="card"></div>
+        <div class="activity-images">
+          <img src="/camp1.jpg" alt="Camping 1"><br>
+          <img src="/camp2.jpg" alt="Camping 2"><br>
+          <img src="/camp3.jpg" alt="Camping 3"><br>
+        </div>
+        <div class="activity-info">
+          <h3 class="activity-title">Camping</h3>
+          <p class="activity-description">Connect with nature through camping in picturesque locations, surrounded by serene beauty and starry skies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Travelicious. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<html>
+<head>
+<style>
+/* CSS code for animation and some latest CSS3 features */
+
+/* Define a keyframe animation for the contact form */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Define a keyframe animation for the background image */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the body element */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:white;
+}
+
+/* Style the header element */
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url; /* A travel-related image */
+  background-size: cover;
+  background-position: center;
+  animation: fade-in 2s ease-in-out;
+}
+
+/* Style the header logo */
+.header-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Style the header logo image */
+.header-logo img {
+  width: 100px;
+}
+
+/* Style the header navigation */
+.header-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Style the header navigation list */
+.header-nav ul {
+  list-style: none;
+}
+
+/* Style the header navigation list items */
+.header-nav ul li {
+  display: inline-block;
+}
+
+/* Style the header navigation list links */
+.header-nav ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+/* Change the link color on hover */
+.header-nav ul li a:hover {
+   color:#00a8ff; /* A blue color */
+}
+
+/* Style the contact form container */
+.contact-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  animation: slide-in 1s ease-in-out;
+}
+
+/* Style the contact form title */
+.contact-form h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+/* Style the contact form fields */
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+}
+
+/* Style the contact form submit button */
+.contact-form button {
+   display:block; 
+   width :100%; 
+   margin-top :20px; 
+   padding :15px; 
+   border :none; 
+   outline :none; 
+   background-color :#00a8ff; /* A blue color */ 
+   color :white; 
+}
+
+/* Change the button color on hover */
+.contact-form button:hover {
+   background-color:#0097e6; /* A darker blue color */ 
+}
+
+/* Style the footer element */
+footer {
+   position :relative; 
+   height :100px; 
+   background-color :grey; /* A blue color */ 
+   color :white; 
+}
+
+/* Style the footer content container */
+.footer-content {
+   position :absolute; 
+   top :50%; 
+   left :50%; 
+   transform :translate(-50%, -50%); 
+   display :flex; 
+   align-items :center; 
+   justify-content :space-between; 
+   width :80%; 
+}
+
+/* Style the footer social icons container */
+.footer-social {
+   display :flex; 
+}
+
+/* Style the footer social icons */
+.footer-social img {
+   width :40px; 
+   margin-right :10px; 
+}
+</style>
+</head>
+<body>
+
+<header>
+<!-- A header element with a background image, a logo, and a navigation -->
+<div class="header-logo">
+
+</div>
+<div class="header-nav">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</header>
+
+<div class="contact-form">
+<!-- A contact form element with some fields and a button -->
+<h1>Contact Us</h1>
+<form>
+<input type="text" name="name" placeholder="Your name" required>
+<input type="email" name="email" placeholder="Your email" required>
+<textarea name="message" placeholder="Your message" rows="5" required></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
+
+<footer>
+<!-- A footer element with some content and social icons -->
+<div class="footer-content">
+<p>© 2023 Travel. All rights reserved.</p>
+<div class="footer-social">
+<img src="/fb.jpg" alt="Facebook"> <!-- A Facebook icon -->
+<img src="twitter.png" alt="Twitter"> <!-- A Twitter icon -->
+<img src="/insta.jpg" alt="Instagram"> <!-- An Instagram icon -->
+</div>
+</div>
+</footer>
+
+</body>
+</html>

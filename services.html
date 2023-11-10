@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travelicious</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: white;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px 50px;
+        padding: 100px 50px;
+    }
+
+    .container .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 350px;
+        max-width: 100%;
+        height: 300px;
+        background: white;
+        border-radius: 20px;
+        transition: 0.5s;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    }
+
+    .container .card:hover {
+        height: 400px;
+    }
+
+    .container .card .img-box {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        background: #000000;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .container .card:hover .img-box {
+        top: -100px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .card .img-box img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container .card .content {
+        position: absolute;
+        top: 252px;
+        width: 100%;
+        height: 35px;
+        padding: 0 30px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .container .card:hover .content {
+        top: 130px;
+        height: 250px;
+    }
+
+    .container .card .content h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--clr);
+    }
+
+    .container .card .content p {
+        color: #333;
+    }
+
+    .container .card .content a {
+        position: relative;
+        top: 15px;
+        display: inline-block;
+        padding: 12px 25px;
+        text-decoration: none;
+        background: var(--clr);
+        color: white;
+        font-weight: 500;
+    }
+
+    .container .card .content a:hover {
+        opacity: 0.8;
+        background-color: #000000;
+        color: blue;
+    }
+    .card:hover {
+        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    }
+
+    @media (max-width: 480px) {
+        .container .card {
+            width: 230px;
+            border-radius: 15px;
+        }
+
+        .container .card .img-box {
+            width: 185px;
+            border-radius: 10px;
+        }
+
+        .container .card .content p {
+            font-size: 0.8rem;
+        }
+
+        .container .card .content a {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="card" style="--clr: #009688">
+            <div class="img-box">
+                <img src="/backpacking.jpg">
+            </div>
+            <div class="content">
+                <h2>Backpacking Trips</h2><br><br>
+                <p style="text-align: center; font-family: 'Times New Roman';">
+                    A cheap, autonomous travel option is backpacking. It has progressively become a popular travel
+                    destination. "Backpacker tourism is typically for young, solitary, and city-loving tourists on a
+                    tight budget. Backpacking trips can be taken to places like Bali, Jaisalmer, Gokarna, or any other
+                    city, state, or continent.
+
+                    The popular backpacking tour is popular with young individuals who enjoy traveling.
+                </p>
+                <a href="https://www.justwravel.com/backpacking-trips">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="--clr: #FF3E7F">
+            <div class="img-box">
+                <img src="/family hiking.jpg">
+            </div>
+            <div class="content">
+                <h2>Family Hiking Trips</h2><br><br>
+
+                <p style="text-align: center; font-family: 'Times New Roman';">
+                    Family hiking trips are a great way to spend quality time with your children or loved ones without
+                    distractions especially the technology kind. Opting for hiking trips with the family offers you the
+                    opportunity to tune in to your loved ones on another level, even when you step off the grid just for
+                    a few days.
+                </p>
+                <a href="https://wildlandtrekking.com/trip-styles/family-hiking-trips/">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="--clr: #03A9F4">
+            <div class="img-box">
+                <img src="/water sport.jpg">
+            </div>
+            <div class="content">
+                <h2>Water Sports</h2><br><br>
+                <p style="text-align: center; font-family: 'Times New Roman';">
+                    Water adventure sports are undertaken at water bodies such as lakes, canals, sea, creeks, ocean, and
+                    coastal areas. Water sports geeks travel specific locations to experience soft as well as hard water
+                    based adventures and activities such as canoeing, kayaking, water-skiing, sailing, river rafting,
+                    and scuba diving.
+                </p>
+                <a href="https://tourscanner.com/blog/water-sports-must-try/">Read More</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" style="--clr: #009688">
+                <div class="img-box">
+                    <img src="/winter sport.jpg">
+                </div>
+                <div class="content">
+                    <h2>Winter Sports</h2><br><br>
+                    <p style="text-align: center; font-family: 'Times New Roman';">
+                        Winter sports are usually played on snow or ice during the winter months when it is cold outside
+                    </p>
+                    <a href="https://olympics.com/en/sports/winter-olympics">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="--clr: #009688">
+            <div class="img-box">
+                <img src="/backpacking.jpg">
+            </div>
+            <div class="content">
+                <h2>Backpacking Trips</h2><br><br>
+                <p style="text-align: center; font-family: 'Times New Roman';">
+                    A cheap, autonomous travel option is backpacking. It has progressively become a popular travel
+                    destination. "Backpacker tourism is typically for young, solitary, and city-loving tourists on a
+                    tight budget. Backpacking trips can be taken to places like Bali, Jaisalmer, Gokarna, or any other
+                    city, state, or continent.
+
+                    The popular backpacking tour is popular with young individuals who enjoy traveling.
+                </p>
+                <a href="https://www.justwravel.com/backpacking-trips">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="--clr: #FF3E7F">
+            <div class="img-box">
+                <img src="/family hiking.jpg">
+            </div>
+            <div class="content">
+                <h2>Family Hiking Trips</h2><br><br>
+
+                <p style="text-align: center; font-family: 'Times New Roman';">
+                    Family hiking trips are a great way to spend quality time with your children or loved ones without
+                    distractions especially the technology kind. Opting for hiking trips with the family offers you the
+                    opportunity to tune in to your loved ones on another level, even when you step off the grid just for
+                    a few days.
+                </p>
+                <a href="https://wildlandtrekking.com/trip-styles/family-hiking-trips/">Read More</a>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+
+</html>
